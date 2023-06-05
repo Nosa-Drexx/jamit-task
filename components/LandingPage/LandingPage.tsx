@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSetion";
 import CategoriesSection from "./components/categoriesSection";
+import FeaturedPodcastSection from "./components/featuredPodcastSection";
 import NavBar from "./components/navBar";
 import ToolSection from "./components/toolSection";
 
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <HeroSection />
       <ToolSection />
       <CategoriesSection />
+      <FeaturedPodcastSection />
     </>
   );
 };

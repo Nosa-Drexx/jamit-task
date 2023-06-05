@@ -1,6 +1,7 @@
 "use client";
 import Nav from "react-bootstrap/Nav";
 import { categoriesSelector } from "../libs/categories";
+import styles from "../styles/categoryTab.module.css";
 
 function CategoryTab({ categories, setCategoriesToDisplay }) {
   const handleSelect = (eventKey) => {
@@ -8,7 +9,12 @@ function CategoryTab({ categories, setCategoriesToDisplay }) {
   };
 
   return (
-    <Nav variant="pills" defaultActiveKey="#" onSelect={handleSelect}>
+    <Nav
+      variant="pills"
+      defaultActiveKey="#"
+      onSelect={handleSelect}
+      className={styles.tab}
+    >
       <Nav.Item>
         <Nav.Link href="#" eventKey="All">
           All
