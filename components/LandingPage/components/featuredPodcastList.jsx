@@ -10,7 +10,7 @@ const FeaturedPodcastList = () => {
     useEffect(() => {
         const featured = [];
         for(let elem of podcast) {
-            //not more than 15 featured posts
+            //not more than 7 featured posts
             if(featured.length >= 7){
                 break;
             }

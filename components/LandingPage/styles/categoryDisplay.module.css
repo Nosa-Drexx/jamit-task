@@ -14,13 +14,12 @@
 .categoryDisplay {
     width: 100%;
     padding: 1rem;
-    /* height: 600px;
-    overflow-y: auto; */
+    max-height: 700px;
+    overflow-y: auto;
     display: flex;
     flex-flow: row wrap;
     gap: 1rem 0px;
     justify-content: center;
-    
 }
 
 
@@ -33,5 +32,7 @@
 @media(min-width: 700px) {
     .categoryDisplay {
         justify-content: space-between;
+        max-height: unset;
+        overflow-y: unset;
     }
 }

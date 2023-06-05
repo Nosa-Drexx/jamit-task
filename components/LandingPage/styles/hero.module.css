@@ -12,6 +12,7 @@
     max-width: 1300px;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
     gap: 1rem
 }
 
@@ -55,6 +56,10 @@
     }
     .imageContainer {
         width: 45%;
+    }
+
+    .heroImage {
+        height: 400px;
     }
     
     .mainText {

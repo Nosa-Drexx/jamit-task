@@ -11,14 +11,12 @@ function CategoryTab({ categories, setCategoriesToDisplay }) {
   return (
     <Nav
       variant="pills"
-      defaultActiveKey="#"
+      defaultActiveKey="All"
       onSelect={handleSelect}
       className={styles.tab}
     >
       <Nav.Item>
-        <Nav.Link href="#" eventKey="All">
-          All
-        </Nav.Link>
+        <Nav.Link eventKey="All">All</Nav.Link>
       </Nav.Item>
       {categories.map((podcast) => (
         <Nav.Item key={podcast.category_name}>
