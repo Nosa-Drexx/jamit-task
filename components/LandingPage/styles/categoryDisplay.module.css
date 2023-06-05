@@ -1,0 +1,29 @@
+/* gradient keyframe */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.categoryDisplay {
+    width: 100%;
+    padding: 1rem;
+    /* height: 600px;
+    overflow-y: auto; */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem 0px;
+    justify-content: space-between;
+    
+}
+
+.cardHeader {
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite ;
+}

@@ -3,10 +3,18 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import GetStartedLink from "./getStartedLink";
+import styles from "../styles/navBar.module.css";
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="yellowgreen"
+      className={styles.navBackground}
+      variant="light"
+      sticky="top"
+    >
       <Container>
         <Navbar.Brand href="#home">Jamit</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

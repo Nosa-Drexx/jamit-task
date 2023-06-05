@@ -2,6 +2,9 @@
     --mainPodcastText: #f98a5d;
     --heroBackground: #fde8cd;
     --getStarted: #00917c; 
+    --layout: 1300px;
+    --subSectionSize: 2.5rem;
+    --subSectionWeight: bolder
 }
 
 *, *::before, *::after {

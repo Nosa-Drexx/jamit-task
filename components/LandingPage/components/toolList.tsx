@@ -4,7 +4,7 @@ const ToolList = () => {
   return (
     <div className={styles.analysis}>
       <div className={styles.analysisList}>
-        <h3 style={{ color: "#f5a623" }}>Reporting & Analysis</h3>
+        <h3 style={{ color: "#f98a5d" }}>Reporting & Analysis</h3>
         <p>Easy to understand stats</p>
       </div>
       <div className={styles.analysisList}>

@@ -8,7 +8,7 @@
 
 .toolsContainer {
     width: 100%;
-    max-width: 1300px;
+    max-width: var(--layout);
     display: flex;
     flex-flow: column nowrap;
 }
@@ -17,8 +17,8 @@
     text-align: center;
 }
 .toolSection h2 {
-    font-size: 2.5rem;
-    font-weight: bolder;
+    font-size: var(--subSectionSize);
+    font-weight: var(--subSectionWeight);
 }
 
 .tools {
