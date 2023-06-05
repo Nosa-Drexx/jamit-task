@@ -1,0 +1,8 @@
+.getStartedLink {
+    border-radius: 10px;
+    background: var(--getStarted);
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}

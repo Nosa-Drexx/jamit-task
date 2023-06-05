@@ -1,3 +1,9 @@
+:root {
+    --mainPodcastText: #f98a5d;
+    --heroBackground: #fde8cd;
+    --getStarted: #00917c; 
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }

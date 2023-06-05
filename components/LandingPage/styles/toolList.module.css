@@ -1,0 +1,27 @@
+.analysis {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.analysisList {
+    display: flex;
+    flex-flow:column nowrap;
+    padding: 1rem;
+}
+
+.analysisList p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.analysisList h3{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.analysisList:hover {
+    border-radius: 10px;
+    background: var(--heroBackground);
+}

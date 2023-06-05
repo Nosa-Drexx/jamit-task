@@ -1,0 +1,85 @@
+{
+    "categories": [
+      {
+        "category_name": "True Crime",
+        "podcasts": [
+          {
+            "title": "Serial",
+            "host": "Sarah Koenig",
+            "description": "Serial is a groundbreaking true crime podcast that investigates a different case each season. Host Sarah Koenig takes listeners on a captivating journey, unraveling the details, exploring the evidence, and raising thought-provoking questions along the way."
+          },
+          {
+            "title": "Criminal",
+            "host": "Phoebe Judge",
+            "description": "Criminal is a podcast that delves into the stories of criminals, their victims, and the people affected by crime. Host Phoebe Judge presents compelling narratives that shed light on various aspects of the criminal world, from notorious cases to lesser-known tales."
+          },
+          {
+            "title": "My Favorite Murder",
+            "host": "Karen Kilgariff and Georgia Hardstark",
+            "description": "Join hosts Karen Kilgariff and Georgia Hardstark as they share their favorite tales of murder and hear hometown crime stories from their loyal fanbase. My Favorite Murder combines true crime with a dash of dark humor, making it a hit among crime enthusiasts."
+          }
+        ]
+      },
+      {
+        "category_name": "Science",
+        "podcasts": [
+          {
+            "title": "Radiolab",
+            "host": "Jad Abumrad and Robert Krulwich",
+            "description": "Radiolab is a podcast that explores scientific and philosophical concepts through captivating storytelling and sound design. Hosts Jad Abumrad and Robert Krulwich take listeners on mind-bending journeys that illuminate the wonders of the natural world."
+          },
+          {
+            "title": "Science Vs",
+            "host": "Wendy Zukerman",
+            "description": "Science Vs is a podcast that examines popular myths, trends, and controversies through a scientific lens. Host Wendy Zukerman breaks down complex topics, separates fact from fiction, and presents evidence-based insights in an engaging and accessible manner."
+          },
+          {
+            "title": "The Infinite Monkey Cage",
+            "host": "Brian Cox and Robin Ince",
+            "description": "The Infinite Monkey Cage is a comedic and informative science podcast hosted by physicist Brian Cox and comedian Robin Ince. With the help of expert guests, they discuss a wide range of scientific topics, blending humor and intellectual curiosity."
+          }
+        ]
+      },
+      {
+        "category_name": "Business",
+        "podcasts": [
+          {
+            "title": "How I Built This",
+            "host": "Guy Raz",
+            "description": "How I Built This is a podcast that explores the stories behind successful businesses and the entrepreneurs who built them. Host Guy Raz interviews industry leaders and dives deep into their journeys, revealing the challenges, triumphs, and lessons learned along the way."
+          },
+          {
+            "title": "The Indicator from Planet Money",
+            "host": "Cardiff Garcia and Stacey Vanek Smith",
+            "description": "The Indicator from Planet Money is a podcast that explores the economic forces shaping our world. Hosts Cardiff Garcia and Stacey Vanek Smith break down complex economic concepts, share fascinating stories, and provide insights into the latest economic trends and issues."
+          },
+          {
+            "title": "The Tim Ferriss Show",
+            "host": "Tim Ferriss",
+            "description": "The Tim Ferriss Show is a podcast where host Tim Ferriss deconstructs the success strategies and habits of world-class performers in various fields. Through in-depth interviews, he uncovers valuable insights that listeners can apply to their own lives and businesses."
+          }
+        ]
+      },
+      {
+        "category_name": "Comedy",
+        "podcasts": [
+          {
+            "title": "The Joe Rogan Experience",
+            "host": "Joe Rogan",
+            "description": "The Joe Rogan Experience is a long-form podcast where host Joe Rogan engages in candid conversations with a wide range of guests, including comedians, actors, scientists, and more. The show is known for its humor, intellectual discussions, and diverse perspectives."
+          },
+          {
+            "title": "Conan O'Brien Needs a Friend",
+            "host": "Conan O'Brien",
+            "description": "Conan O'Brien Needs a Friend is a podcast where the renowned late-night host engages in hilarious and heartfelt conversations with celebrities and friends. Conan's wit, charm, and self-deprecating humor make this show a delightful listen for comedy enthusiasts."
+          },
+          {
+            "title": "My Dad Wrote A Porno",
+            "host": "Jamie Morton, James Cooper, and Alice Levine",
+            "description": "My Dad Wrote A Porno is a comedic podcast where Jamie Morton reads a chapter from his dad's self-published erotic novel, with hilarious commentary from James Cooper and Alice Levine. The hosts' witty banter and reactions to the absurd storylines make this podcast a comedic gem."
+          }
+        ]
+      }
+    ]
+  }
+  
