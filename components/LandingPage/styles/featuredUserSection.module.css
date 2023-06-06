@@ -1,0 +1,27 @@
+.usersSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.usersContainer {
+    width: 100%;
+    max-width: var(--layout);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.usersText {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.usersText h2 {
+    font-size: var(--subSectionSize);
+    font-weight: var(--subSectionWeight);
+}
