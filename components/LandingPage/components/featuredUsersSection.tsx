@@ -7,7 +7,7 @@ const FeaturedUserSection = () => {
       <div className={styles.usersContainer}>
         <div className={styles.usersText}>
           <h2>What some of our client say</h2>
-          <p>Some </p>
+          <p>Jamit is the better option, Podcasting has never been easier</p>
         </div>
         <UsersCarousel />
       </div>
