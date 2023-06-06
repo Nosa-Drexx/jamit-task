@@ -35,13 +35,13 @@ function UsersCarousel() {
       <Carousel.Item className={styles.carouselItem}>
         <div className={styles.user}>
           <p>
-            Jamit Podcast Hosting and Monetization Site has been a game-changer
+            {`Jamit Podcast Hosting and Monetization Site has been a game-changer
             for me as a podcaster. The platform's analytics and insights have
             provided me with invaluable data to understand my audience better. I
             can easily track my podcast's performance, audience demographics,
             and engagement metrics, which have helped me tailor my content and
             improve my podcasting strategy. Additionally, Jamit's monetization
-            tools have been a fantastic resource.
+            tools have been a fantastic resource.`}
           </p>
           <Image
             src={require("../images/George-Cunney.jpg")}
@@ -58,13 +58,13 @@ function UsersCarousel() {
       <Carousel.Item className={styles.carouselItem}>
         <div className={styles.user}>
           <p>
-            I can't speak highly enough of Jamit Podcast Hosting and
+            {`I can't speak highly enough of Jamit Podcast Hosting and
             Monetization Site. It offers a comprehensive suite of features that
             have made podcasting a breeze for me. The hosting infrastructure is
             reliable and fast, ensuring that my episodes are always available to
             my listeners without any hiccups. I particularly appreciate the
             site's monetization options, as they allow me to monetize my podcast
-            in multiple ways. Jamit is a fantastic choice.
+            in multiple ways. Jamit is a fantastic choice.`}
           </p>
           <Image
             src={require("../images/williams-adebayo.jpg")}
