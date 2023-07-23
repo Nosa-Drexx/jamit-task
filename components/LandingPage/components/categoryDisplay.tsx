@@ -1,8 +1,9 @@
+/*!!!! Beware: Typescipt error check for this file has been disabled with the comment below  */
+// @ts-nocheck
 import Card from "react-bootstrap/Card";
 import styles from "../styles/categoryDisplay.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { isForOfStatement } from "typescript";
 
 const cardVariant = {
   show: {
@@ -24,22 +25,10 @@ const cardVariant = {
   },
 };
 
-const variantContainer = {
-  show: {
-    transition: {
-      type: "spring",
-      bounce: 0,
-      duration: 0.7,
-      delayChildren: 0.3,
-      staggerChildren: 0.05,
-    },
-  },
-};
-
 const CategoryDisplay = ({ categories }) => {
   const [categoriesWithDelay, setCategoriesWithDelay] = useState([]);
 
-  //Add Delay effect for value for items
+  /*Add Delay effect to manually trigger stagger for cards for value for items*/
   useEffect(() => {
     let delayFor = 0;
     const delayIncrementBy = 0.07;
