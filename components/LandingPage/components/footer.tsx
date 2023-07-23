@@ -1,80 +1,142 @@
+"use client";
 import Link from "next/link";
 import styles from "../styles/footer.module.css";
+import { motion } from "framer-motion";
+
+const itemVariants = {
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  hide: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+};
+
+const variantContainer = {
+  show: {
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.7,
+      delayChildren: 0.3,
+      staggerChildren: 0.05,
+    },
+  },
+};
 const Footer = () => {
   return (
     <section className={styles.footerSection}>
       <div className={styles.footerContainer}>
         {/* Jamit */}
-        <div className={styles.list}>
-          <h3>Jamit</h3>
-          <ul>
-            <li>
+        <motion.div
+          initial={"hide"}
+          whileInView={"show"}
+          variants={variantContainer}
+          className={styles.list}
+        >
+          <motion.h3 variants={itemVariants}>Jamit</motion.h3>
+          <motion.ul
+            initial={"hide"}
+            whileInView={"show"}
+            variants={variantContainer}
+            transition={{ delay: 0.2 }}
+          >
+            <motion.li variants={itemVariants}>
               <Link href="#features">Features</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#subscription">Subscription</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#pricing">pricing</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#users">Customer Reviews</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#login">Login</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#signup">SignUp</Link>
-            </li>
-          </ul>
-        </div>
+            </motion.li>
+          </motion.ul>
+        </motion.div>
 
         {/* Resources */}
-        <div className={styles.list}>
-          <h3>Resources</h3>
-          <ul>
-            <li>
+        <motion.div
+          initial={"hide"}
+          whileInView={"show"}
+          variants={variantContainer}
+          className={styles.list}
+        >
+          <motion.h3 variants={itemVariants}>Resources</motion.h3>
+          <motion.ul
+            initial={"hide"}
+            whileInView={"show"}
+            variants={variantContainer}
+            transition={{ delay: 0.2 }}
+          >
+            <motion.li variants={itemVariants}>
               <Link href="#features">How to start a podcast</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#subscription">Blog</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#pricing">What is new</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#users">Platform Stats</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#login">Jamit API</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#signup">Wordpress Plugin</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#help">Help</Link>
-            </li>
-          </ul>
-        </div>
+            </motion.li>
+          </motion.ul>
+        </motion.div>
 
         {/* Legal */}
-        <div className={styles.list}>
-          <h3>Legal</h3>
-          <ul>
-            <li>
+        <motion.div
+          initial={"hide"}
+          whileInView={"show"}
+          variants={variantContainer}
+          className={styles.list}
+        >
+          <motion.h3 variants={itemVariants}>Legal</motion.h3>
+          <motion.ul
+            initial={"hide"}
+            whileInView={"show"}
+            variants={variantContainer}
+            transition={{ delay: 0.2 }}
+          >
+            <motion.li variants={itemVariants}>
               <Link href="#privacy">Privacy & Policy</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#terms">Terms & Conditions</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants}>
               <Link href="#dmca">DMCA</Link>
-            </li>
-          </ul>
-          <div className={styles.socials}>
-            <a href="mailto: hello@support.jamit">hello@support.jamit</a>
-          </div>
-        </div>
+            </motion.li>
+          </motion.ul>
+          <motion.div
+            initial={"hide"}
+            whileInView={"show"}
+            className={styles.socials}
+          >
+            <motion.a
+              variants={itemVariants}
+              href="mailto: hello@support.jamit"
+            >
+              hello@support.jamit
+            </motion.a>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
