@@ -2,16 +2,26 @@
 
 import { useEffect, useState } from "react";
 /** custom hook to alway check if browser window view port has been resized */
+
 const useViewPort = () => {
-  const [currentViewPortWidth, setCurrentViewPortWidth] = useState(
-    Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  );
-  const [currentViewPortHeight, setCurrentViewPortHeight] = useState(
-    Math.max(
-      document.documentElement.clientHeight || 0,
-      window.innerHeight || 0
-    )
-  );
+  const [currentViewPortWidth, setCurrentViewPortWidth] = useState(0);
+  const [currentViewPortHeight, setCurrentViewPortHeight] = useState(0);
+
+  //Resloves nextjs ssr issue
+  useEffect(() => {
+    setCurrentViewPortWidth(
+      Math.max(
+        document.documentElement.clientWidth || 0,
+        window.innerWidth || 0
+      )
+    );
+    setCurrentViewPortHeight(
+      Math.max(
+        document.documentElement.clientHeight || 0,
+        window.innerHeight || 0
+      )
+    );
+  }, []);
 
   function viewPortCheck() {
     const viewPortChecker = setInterval(() => {
