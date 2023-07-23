@@ -1,27 +1,37 @@
 .analysis {
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
 }
 
 .analysisList {
-    display: flex;
-    flex-flow:column nowrap;
-    padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.analysisList:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .analysisList p {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.analysisList h3{
-    font-weight: bold;
-    font-size: 1.7rem;
+.analysisList h3 {
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 
 .analysisList:hover {
-    border-radius: 10px;
-    background: var(--heroBackground);
+  border-radius: 10px;
+  background: var(--heroBackground);
 }
