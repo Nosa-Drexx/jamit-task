@@ -34,6 +34,7 @@ const NavBar = () => {
   const [animateNav, setAnimateNav] = useState(false);
   const { currentViewPortWidth } = useViewPort();
   const minMobileSizeForNav = 991;
+  const navList = ["Categories", "Podcasts", "Users", "Tools"];
 
   /* useEffect to animate for different screen size */
   useEffect(() => {
@@ -72,26 +73,49 @@ const NavBar = () => {
         />
         <Navbar.Collapse as={motion.div} id="responsive-navbar-nav">
           <Nav as={motion.nav} variants={variantContainer} className="me-auto">
-            <Nav.Link as={motion.a} variants={itemVariants} href="#categories">
-              Categories
-            </Nav.Link>
-            <Nav.Link as={motion.a} variants={itemVariants} href="#podcasts">
-              Podcast
-            </Nav.Link>
-            <Nav.Link as={motion.a} variants={itemVariants} href="#users">
-              Users
-            </Nav.Link>
-            <Nav.Link as={motion.a} variants={itemVariants} href="#tools">
-              Tools
-            </Nav.Link>
+            {navList.map((element) => (
+              <Nav.Link
+                as={motion.a}
+                key={element}
+                onClick={() => {
+                  if (currentViewPortWidth <= minMobileSizeForNav) {
+                    setOpenNav(false);
+                    setAnimateNav(false);
+                  }
+                }}
+                variants={itemVariants}
+                href={`#${element[0].toLowerCase()}${element.slice(
+                  1,
+                  element.length
+                )}`}
+              >
+                {element}
+              </Nav.Link>
+            ))}
           </Nav>
           <Nav as={motion.nav} variants={variantContainer}>
-            <Nav.Link as={motion.a} variants={itemVariants} href="#login">
+            <Nav.Link
+              as={motion.a}
+              variants={itemVariants}
+              onClick={() => {
+                if (currentViewPortWidth <= minMobileSizeForNav) {
+                  setOpenNav(false);
+                  setAnimateNav(false);
+                }
+              }}
+              href="#login"
+            >
               Login
             </Nav.Link>
             <Nav.Link
               as={motion.a}
               variants={itemVariants}
+              onClick={() => {
+                if (currentViewPortWidth <= minMobileSizeForNav) {
+                  setOpenNav(false);
+                  setAnimateNav(false);
+                }
+              }}
               eventKey={2}
               href="#signup"
             >
