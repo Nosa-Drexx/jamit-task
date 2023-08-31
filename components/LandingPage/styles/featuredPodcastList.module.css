@@ -13,5 +13,10 @@
     color: white;
     font-weight: var(--subSectionWeight);
     font-size: 0.9rem;
+}
 
+@media(min-width: 700px){
+    .list {
+        font-size: 1.2rem;
+    }
 }
